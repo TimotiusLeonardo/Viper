@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		1E5BA344263BAA8700AEB8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA343263BAA8700AEB8CF /* AppDelegate.swift */; };
 		1E5BA346263BAA8700AEB8CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA345263BAA8700AEB8CF /* SceneDelegate.swift */; };
-		1E5BA348263BAA8700AEB8CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA347263BAA8700AEB8CF /* ViewController.swift */; };
 		1E5BA34B263BAA8700AEB8CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BA349263BAA8700AEB8CF /* Main.storyboard */; };
 		1E5BA34D263BAA8800AEB8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BA34C263BAA8800AEB8CF /* Assets.xcassets */; };
 		1E5BA350263BAA8800AEB8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BA34E263BAA8800AEB8CF /* LaunchScreen.storyboard */; };
 		1E5BA35B263BAA8800AEB8CF /* ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA35A263BAA8800AEB8CF /* ViperTests.swift */; };
 		1E5BA366263BAA8800AEB8CF /* ViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA365263BAA8800AEB8CF /* ViperUITests.swift */; };
+		1E5BA374263BAAB500AEB8CF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA373263BAAB500AEB8CF /* View.swift */; };
+		1E5BA377263BAAD000AEB8CF /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA376263BAAD000AEB8CF /* Interactor.swift */; };
+		1E5BA379263BAADC00AEB8CF /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA378263BAADC00AEB8CF /* Presenter.swift */; };
+		1E5BA37B263BAAE500AEB8CF /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA37A263BAAE500AEB8CF /* Entity.swift */; };
+		1E5BA37D263BAAEC00AEB8CF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA37C263BAAEC00AEB8CF /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		1E5BA340263BAA8700AEB8CF /* Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5BA343263BAA8700AEB8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E5BA345263BAA8700AEB8CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E5BA347263BAA8700AEB8CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E5BA34A263BAA8700AEB8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E5BA34C263BAA8800AEB8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5BA34F263BAA8800AEB8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		1E5BA361263BAA8800AEB8CF /* ViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5BA365263BAA8800AEB8CF /* ViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperUITests.swift; sourceTree = "<group>"; };
 		1E5BA367263BAA8800AEB8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5BA373263BAAB500AEB8CF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1E5BA376263BAAD000AEB8CF /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		1E5BA378263BAADC00AEB8CF /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		1E5BA37A263BAAE500AEB8CF /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		1E5BA37C263BAAEC00AEB8CF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,9 @@
 		1E5BA342263BAA8700AEB8CF /* Viper */ = {
 			isa = PBXGroup;
 			children = (
+				1E5BA375263BAABD00AEB8CF /* Viper */,
 				1E5BA343263BAA8700AEB8CF /* AppDelegate.swift */,
 				1E5BA345263BAA8700AEB8CF /* SceneDelegate.swift */,
-				1E5BA347263BAA8700AEB8CF /* ViewController.swift */,
 				1E5BA349263BAA8700AEB8CF /* Main.storyboard */,
 				1E5BA34C263BAA8800AEB8CF /* Assets.xcassets */,
 				1E5BA34E263BAA8800AEB8CF /* LaunchScreen.storyboard */,
@@ -126,6 +134,18 @@
 				1E5BA367263BAA8800AEB8CF /* Info.plist */,
 			);
 			path = ViperUITests;
+			sourceTree = "<group>";
+		};
+		1E5BA375263BAABD00AEB8CF /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BA373263BAAB500AEB8CF /* View.swift */,
+				1E5BA376263BAAD000AEB8CF /* Interactor.swift */,
+				1E5BA378263BAADC00AEB8CF /* Presenter.swift */,
+				1E5BA37A263BAAE500AEB8CF /* Entity.swift */,
+				1E5BA37C263BAAEC00AEB8CF /* Router.swift */,
+			);
+			path = Viper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5BA348263BAA8700AEB8CF /* ViewController.swift in Sources */,
+				1E5BA37D263BAAEC00AEB8CF /* Router.swift in Sources */,
+				1E5BA379263BAADC00AEB8CF /* Presenter.swift in Sources */,
+				1E5BA374263BAAB500AEB8CF /* View.swift in Sources */,
+				1E5BA37B263BAAE500AEB8CF /* Entity.swift in Sources */,
+				1E5BA377263BAAD000AEB8CF /* Interactor.swift in Sources */,
 				1E5BA344263BAA8700AEB8CF /* AppDelegate.swift in Sources */,
 				1E5BA346263BAA8700AEB8CF /* SceneDelegate.swift in Sources */,
 			);
